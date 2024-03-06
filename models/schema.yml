@@ -73,5 +73,14 @@ sources:
             - campaign_name
 
 
+      - name: int_campaigns_days
+        description: data from all campaigns days
+        tests:
+        - not_null:
+           column_name:
+            - date_date
+            - ads_cost            
+
+
 
              

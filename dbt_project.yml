@@ -40,5 +40,5 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
-      finance_days:
-      +schema: finance_days 
+      finance:
+       +schema: finance_days

@@ -63,15 +63,15 @@ sources:
 
 
 - name: int_campaigns
-    description: data from all campaigns
-    tests:
-      - unique:
-          column_name: "(campaign_key || '-' || date_date)"
-      - not_null:
-          column_name:
-            - paid_source
-            - campaign_name             
-                        
+  description: data from all campaigns
+  tests:
+    - unique: 
+        column_name: "(date_date || '-' || campaign_key)"
+    - not_null: 
+        column_name:
+          - paid_source
+          - campaign_name          
+
 
 
 
